@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0 0;
+	padding:0 0;
+	height:100%;
+	width:100%;
+}
+.wrap{
+	font-family:"微软雅黑","宋体", Times, "Times New Roman", serif;
+	font-size:14px;
+	margin:0 0;
+	padding:0 0;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+}
+.boxStyle{/*照片大小*/
+	width: 500px;
+	height: 256px;
+}
+.scrollBox{
+	position: relative;
+	width: 500px;
+	margin: 0 auto;
+}
+.picInnerBox{
+	width: 10000px;/*足够大能放下即可,如果需要上下滚动，改height*/
+	overflow: hidden;
+}
+.picInnerBox li{
+	cursor: pointer;
+	float: left;
+}
+.picOuterBox{
+	overflow: hidden;
+
+}
+.arrow{
+	position: absolute;
+	top: 45%;
+	height: 40px;
+	cursor: pointer;
+	z-index: 99;		
+}
+.arrow:hover{
+	color: #fff;
+}
+.arrowLeft{
+	float: left;
+	left: 5%;
+}
+.arrowRight{
+	float: right;
+	right: 5%;
+}
+.picControl{
+	overflow: auto;
+	width: 100px;
+	margin: 0 auto;
+}
+.picControl ul li{
+	cursor: pointer;
+	float: left;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+.picControl ul li:hover{
+	color:red;
+}
+.liSelected{
+	color: red;
+}
