@@ -56,19 +56,28 @@ body{
 }
 .picControl{
 	overflow: auto;
-	width: 100px;
-	margin: 0 auto;
+	width: 156px;
+	margin: 10px auto 0 auto;
 }
 .picControl ul li{
 	cursor: pointer;
 	float: left;
+	margin-left: 10px;
 	width: 20px;
 	height: 20px;
 	text-align: center;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%; 
+}
+.picControl ul li:not(.liSelected){
+	background-color: #ccc;
 }
 .picControl ul li:hover{
-	color:red;
+	background-color: #888;
 }
 .liSelected{
-	color: red;
+	background-color: #888;
 }

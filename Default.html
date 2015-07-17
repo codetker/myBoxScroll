@@ -59,7 +59,8 @@
     </div>
 <script type="text/javascript">
     $(document).ready(function(){
-        $(".scrollBox").boxScroll();
+        $(".picOuterBox").boxScroll({'child':'li','toLeft':'.arrowLeft','toRight':'.arrowRight','ControlUl':'.picControl ul'});
+        // $(".picInnerBox").boxScroll({'child':'li','toLeft':'.arrowLeft','toRight':'.arrowRight','ControlUl':'.picControl ul','style':1});
     });
 </script>
 </body>
