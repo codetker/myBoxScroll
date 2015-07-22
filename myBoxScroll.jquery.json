@@ -5,28 +5,19 @@
 	"keywords": [
 		"boxScroll"
 	],
-	"version": "0.1",
+	"version": "0.2",
 	"author": {
-	"name": "jQuery Foundation and other contributors"
-	// "url": "? How shall I write this? ?"
+		"name": "jQuery Foundation and other contributors",
+		"blog":"http://www.cnblogs.com/codetker/"
 	},
-	"maintainers": [
-		{
-			"name": "codetker",
-			"email": "codetker@sina.com"
-			// "url": "none"
-		}
-	],
-	"licenses": [
-		{
-			// "type": "none",
-			// "url": "none"
-		}
-	],
-	// "bugs": "https://github.com/jquery/jquery-color/issues",
-	// "homepage": "https://github.com/jquery/jquery-color",
-	// "docs": "https://github.com/jquery/jquery-color",
-	// "download": "",
+	"maintainers": [{
+		"name": "codetker",
+		"email": "codetker@sina.com",
+		"github":"https://github.com/codetker"
+	}],
+	"licenses": [{
+		"type": "MIT"
+	}],
 	"dependencies": {
 		"jquery": ">=1.5"
 	}
