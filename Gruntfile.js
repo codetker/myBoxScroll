@@ -12,12 +12,15 @@ module.exports = function(grunt) {
                 src: 'src/jquery.codetker.boxScroll.js',
                 dest: 'dest/jquery.codetker.boxScroll.min.js'
             }
-        }
+        },
+
+        jshint: ['src/jquery.codetker.boxScroll.js']
 
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
-    grunt.registerTask('default', ['uglify']);
+    grunt.registerTask('default', ['jshint', 'uglify']);
 
 };

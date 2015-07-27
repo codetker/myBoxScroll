@@ -1,83 +1,96 @@
 @charset "utf-8";
 /* CSS Document */
-body{
-	margin:0 0;
-	padding:0 0;
-	height:100%;
-	width:100%;
-}
-.wrap{
-	font-family:"微软雅黑","宋体", Times, "Times New Roman", serif;
-	font-size:14px;
-	margin:0 0;
-	padding:0 0;
-	height:100%;
-	width:100%;
-	overflow:hidden;
-}
-.boxStyle{/*照片大小*/
-	width: 500px;
+/* to make it better to see */
+/* as whole */
+ body{
+	margin : 0 0;
+	padding: 0 0;
+	height : 100%;
+	width  : 100%;
+ }
+ .wrap{
+	font-family: "微软雅黑","宋体", Times, "Times New Roman", serif;
+	font-size  : 14px;
+	margin     : 0 0;
+	padding    : 0 0;
+	height     : 100%;
+	width      : 100%;
+	overflow   : hidden;
+ }
+/* as whole end */
+
+/* innerBox */
+ .boxStyle{
+	width : 500px;
 	height: 256px;
-}
-.scrollBox{
+ }
+ .scrollBox{
 	position: relative;
-	width: 500px;
-	margin: 0 auto;
-}
-.picInnerBox{
-	width: 10000px;/*足够大能放下即可,如果需要上下滚动，改height*/
+	width   : 500px;
+	margin  : 0 auto;
+ }
+ .picInnerBox{
+	width   : 10000px;
 	overflow: hidden;
-}
-.picInnerBox li{
+ }
+ .picInnerBox li{
 	cursor: pointer;
-	float: left;
-}
-.picOuterBox{
+	float : left;
+ }
+ .picOuterBox{
 	overflow: hidden;
 
-}
-.arrow{
+ }
+/* innerBox end */
+
+/* arrow */
+ .arrow{
 	position: absolute;
-	top: 45%;
-	height: 40px;
-	cursor: pointer;
-	z-index: 99;		
-}
-.arrow:hover{
-	color: #fff;
-}
-.arrowLeft{
-	float: left;
-	left: 5%;
-}
-.arrowRight{
+	top     : 45%;
+	height  : 40px;
+	cursor  : pointer;
+	z-index : 99;		
+ }
+ .arrow:hover{
+	color   : #fff;
+ }
+ .arrowLeft{
+	float   : left;
+	left    : 5%;
+ }
+ .arrowRight{
 	float: right;
 	right: 5%;
-}
-.picControl{
+ }
+/* arrow end */
+
+/* controlUl */
+ .picControl{
 	overflow: auto;
-	width: 156px;
-	margin: 10px auto 0 auto;
-}
-.picControl ul li{
-	cursor: pointer;
-	float: left;
+	width   : 156px;
+	margin  : 10px auto 0 auto;
+ }
+ .picControl ul li{
+	cursor     : pointer;
+	float      : left;
 	margin-left: 10px;
-	width: 20px;
-	height: 20px;
-	text-align: center;
+	width      : 20px;
+	height     : 20px;
+	text-align : center;
 	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%; 
-}
-.picControl ul li:not(.liSelected){
+	-moz-border-radius   : 50%;
+	-ms-border-radius    : 50%;
+	-o-border-radius     : 50%;
+	border-radius        : 50%;
+	/* if <IE7,use PIE.htc or IE-css3.htc here */ 
+ }
+ .picControl ul li:not(.liSelected){
 	background-color: #ccc;
-}
-.picControl ul li:hover{
+ }
+ .picControl ul li:hover{
 	background-color: #888;
-}
-.liSelected{
+ }
+ .liSelected{
 	background-color: #888;
-}
+ }
+/* controlUl end */

@@ -8,7 +8,7 @@
 <title>简易图片轮播插件</title>
 <link href="style/reset.css" rel="stylesheet" type="text/css">
 <link href="style/style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="../src/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="../dest/jquery.codetker.boxScroll.min.js"></script>
 </head>
 
@@ -58,10 +58,29 @@
         </div>
     </div>
 <script type="text/javascript">
-    $(document).ready(function(){
-        $(".picOuterBox").boxScroll({'child':'li','toLeft':'.arrowLeft','toRight':'.arrowRight','ControlUl':'.picControl ul','liHover':'liSelected'});
-        // $(".picInnerBox").boxScroll({'child':'li','toLeft':'.arrowLeft','toRight':'.arrowRight','ControlUl':'.picControl ul','style':1,'liHover':'liSelected'});
-        // $(".picInnerBox").boxScroll({'child':'li','toLeft':'.arrowLeft','toRight':'.arrowRight','ControlUl':'.picControl ul','style':2,'liHover':'liSelected'});
+    $(document).ready(function() {
+        /*$(".picOuterBox").boxScroll({
+            'child': 'li',
+            'style': 1,
+            'stepTime': 1,
+            'direction': 'right',
+            'toLeft': '.arrowLeft',
+            'toRight': '.arrowRight',
+            'ControlUl': '.picControl ul',
+            'cicle': true,
+            'circleTime': 5
+        });*/
+        $(".picInnerBox").boxScroll({
+            'child': 'li',
+            'style': 0,
+            'stepTime': 1,
+            'direction': 'right',
+            'toLeft': '.arrowLeft',
+            'toRight': '.arrowRight',
+            'ControlUl': '.picControl ul',
+            'circle': true,
+            'circleTime': 5
+        });
     });
 </script>
 </body>
