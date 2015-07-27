@@ -8,8 +8,8 @@
 <title>简易图片轮播插件</title>
 <link href="style/reset.css" rel="stylesheet" type="text/css">
 <link href="style/style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="../dest/jquery.codetker.boxScroll.min.js"></script>
+<script type="text/javascript" src="../src/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../src/jquery.codetker.boxScroll.js"></script>
 </head>
 
 <body>
@@ -60,6 +60,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
         /*$(".picOuterBox").boxScroll({
+            'liHover':'liSelected',
             'child': 'li',
             'style': 1,
             'stepTime': 1,
@@ -71,6 +72,7 @@
             'circleTime': 5
         });*/
         $(".picInnerBox").boxScroll({
+            'liHover': 'liSelected',
             'child': 'li',
             'style': 0,
             'stepTime': 1,
@@ -81,6 +83,19 @@
             'circle': true,
             'circleTime': 5
         });
+        /*$(".picInnerBox").boxScroll({
+            'liHover': 'liSelected',
+            'child': 'li',
+            'style': 2,
+            'direction': 'right',
+            'toLeft': '.arrowLeft',
+            'toRight': '.arrowRight',
+            'ControlUl': '.picControl ul',
+            'circle': true,
+            'circleTime': 5,
+            'fadeInTime': 300,
+            'fadeOutTime': 400
+        });*/
     });
 </script>
 </body>
